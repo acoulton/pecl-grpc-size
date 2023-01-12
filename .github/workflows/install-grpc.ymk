@@ -1,0 +1,11 @@
+name: Install GRPC
+on:
+  push:
+  
+jobs:
+  install-grpc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build image
+        run: |
+          docker build .         
